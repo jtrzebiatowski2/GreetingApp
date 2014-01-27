@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to the Greeting App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            .center{
+                text-align: center;
+                background-color: black;
+            }
+            h1{
+                color: chartreuse;
+            }
+            .submitButton{
+                color: black;
+                font-weight: bold;
+                background-color: chartreuse;
+                font-size: 16px;
+            }
+            .textField{
+                background-color: chartreuse;
+                color:black;
+                text-align: center;
+                
+            }
+            
+            .textField:hover{
+                cursor: crosshair;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body class = "center">
+        <form id ="form1" name="form1" method="POST" action="greeter" style = "border-style: ridge; border-color: chartreuse; border-width: 10px;">
+            <div>
+                <H1>Please Enter Your Name</H1>
+                <textarea class="textField"></textarea>
+                <br><br>
+                <input id ="greetingSubmit" name ="greetingSubmit" type = "submit" value="Submit" class="submitButton">
+                <br><br><br><br>
+            </div>
+        </form>
+        
+    </body>
+</html>
