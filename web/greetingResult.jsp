@@ -10,8 +10,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Your Greeting</title>
+        <style>
+            .center{
+                text-align: center;
+                background-color: black;
+            }
+            h1{
+                color: chartreuse;
+            }
+            p{
+                color:chartreuse;
+                font-family: fantasy;
+            }
+        </style>
     </head>
-    <body>
+    <body class="center">
         <h1>Our Robot has done some computing and has the following result</h1>
         <p>
             <%
