@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +13,8 @@ import model.WelcomeService;
  *
  * @author J-Tron
  */
-public class GreetingMessageControler extends HttpServlet {
+@WebServlet(name = "GreetingMessageController", urlPatterns = {"/greeter"})
+public class GreetingMessageController extends HttpServlet {
     public static final String RESULT_PAGE = "greetingResult.jsp";
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

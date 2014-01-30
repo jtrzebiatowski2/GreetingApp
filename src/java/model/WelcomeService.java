@@ -11,7 +11,7 @@ public class WelcomeService {
     
     private final int MORNING_START_TIME = 0;
     private final int AFTERNOON_START_TIME = 12;
-    private final int EVENING_START_TIME = 5;
+    private final int EVENING_START_TIME = 17;
     
     private final String MORNING_MESSAGE = "Good Morning";
     private final String AFTERNOON_MESSAGE = "Good Afternoon";
@@ -20,12 +20,12 @@ public class WelcomeService {
     private int hourOfDay;
     private String greetingMessage;
     
-    
     Calendar c = Calendar.getInstance();
     
-    private void determineTimeOfDay(){
+    private int determineTimeOfDay(){
         
         hourOfDay = c.get(Calendar.HOUR_OF_DAY);
+        return hourOfDay;
         
     }
     
@@ -48,8 +48,8 @@ public class WelcomeService {
     
 //    public static void main(String[] args) {
 //        WelcomeService ws = new WelcomeService();
-//        
-//        System.out.println(ws.getMessage("Justin"));
+//        System.out.print(ws.getMessage("Justin"));
+//         
 //    }
             
     
