@@ -42,7 +42,7 @@ public class GreetingMessageController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html; charset=UTF-8");
 
         // parameters are name attributes in view pages
         // Here we're retrieving form content from form.html
@@ -52,7 +52,7 @@ public class GreetingMessageController extends HttpServlet {
         // For some applications, we would not want to create a new one each time.
         WelcomeService ws = new WelcomeService();
         // Always a good idea to trim and/or validate input data
-        String message = ws.getMessage(name);
+        String message = ws.getMessage(name.trim());
 
         // Parameters are read only Request object properties, but attributes
         // are read/write. We can use attributes to store data for use on
