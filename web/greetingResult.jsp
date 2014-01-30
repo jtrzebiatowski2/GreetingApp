@@ -21,6 +21,7 @@
             p{
                 color:chartreuse;
                 font-family: fantasy;
+                font-size: 60px;
             }
         </style>
     </head>
@@ -31,6 +32,8 @@
                 String greetingMessage = (String)request.getAttribute("Greeting");
                 out.print(greetingMessage);
             %>
+            <br>
+            <img src="Welcome_Friends.jpg"
         </p>
     </body>
 </html>

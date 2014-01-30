@@ -17,6 +17,7 @@ public class WelcomeService {
     private final String AFTERNOON_MESSAGE = "Good Afternoon";
     private final String EVENING_MESSAGE = "Good Evening";
     
+    
     private int hourOfDay;
     private String greetingMessage;
     
